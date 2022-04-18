@@ -1,5 +1,6 @@
 {
     "apiEndPointWeather": "https://api.openweathermap.org/data/2.5",
     "apiEndPointGeo": "http://api.openweathermap.org/geo/1.0",
-    "apiEndPoint": "http://46.8.52.109/api"
+    "apiEndPoint": "http://localhost:8080/api",
+    "222apiEndPoint": "http://46.8.52.109/api"
 }

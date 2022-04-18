@@ -35,7 +35,6 @@ const RegisterForm = ({ toggleForm }) => {
     const onSubmit = (data) => {
         dispatch(signUp(data));
     };
-
     return (
         <Box component="form" sx={sxForm} onSubmit={handleSubmit(onSubmit)}>
             <TitleForm />
@@ -57,7 +56,10 @@ const RegisterForm = ({ toggleForm }) => {
                         value: 7,
                         message: "Минимальная длина пароля 7 символов"
                     },
-                    pattern: /\d+/g
+                    pattern: {
+                        value: /\d+/g,
+                        message: "Необходимо наличие хотя бы одной цифры"
+                    }
                 })}
                 InputProps={{
                     endAdornment: (
