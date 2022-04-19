@@ -12,7 +12,7 @@ const SignInButton = ({ forSignIn }) => {
                 my: 2
             }}
         >
-            {forSignIn ? "Зарегистрироваться" : "Войти"}
+            {forSignIn ? "Войти" : "Зарегистрироваться"}
         </Button>
     );
 };
