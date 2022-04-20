@@ -16,6 +16,10 @@ const TextLastname = ({ error, register }) => {
                     value: true,
                     message: "Поле обязательно для заполнения"
                 },
+                pattern: {
+                    value: /^[a-zA-Zа-яА-ЯёЁ']+?$/,
+                    message: "Фамилия должна состоять только из букв"
+                },
                 maxLength: 100
             })}
         />

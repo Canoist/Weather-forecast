@@ -24,7 +24,7 @@ const NavBarUserInfo = ({ settings }) => {
         <Box sx={{ flexGrow: 0 }}>
             {isLoggedIn ? (
                 <>
-                    <Tooltip title="Open settings">
+                    <Tooltip title="Настройки">
                         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                             <Avatar sx={{ bgcolor: deepOrange[500] }}>
                                 {`${

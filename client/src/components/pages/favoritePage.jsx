@@ -12,6 +12,9 @@ const FavoritePage = () => {
         <WindowLoader open={isLoaded} />
     ) : (
         <Container maxWidth="xl" sx={{ pb: "100px" }}>
+            <Typography variant="h4" align="center" sx={{ mb: 2 }}>
+                Любимые города
+            </Typography>
             {favData.length ? (
                 favData.map((item, index) => (
                     <div

@@ -153,6 +153,7 @@ export const updateUser = (payload) => async (dispatch) => {
     try {
         const data = await userService.patch(payload);
         dispatch(userUpdated(data));
+        history.push("/");
     } catch (error) {
         dispatch(userUpdateFailed(error.message));
     }

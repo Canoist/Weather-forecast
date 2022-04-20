@@ -16,6 +16,10 @@ const TextFirstname = ({ error, register }) => {
                     value: true,
                     message: "Поле обязательно для заполнения"
                 },
+                pattern: {
+                    value: /^[a-zA-Zа-яА-ЯёЁ']+?$/,
+                    message: "Имя должно состоять только из букв"
+                },
                 maxLength: 80
             })}
         />
