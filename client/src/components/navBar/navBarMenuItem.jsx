@@ -4,6 +4,7 @@ import { ListItemIcon, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 import Logout from "@mui/icons-material/Logout";
 import Settings from "@mui/icons-material/Settings";
+import { translateTab } from "../../utils/translateTabs";
 
 const NavBarMenuItem = ({ onClick, setting }) => {
     return (
@@ -28,7 +29,7 @@ const NavBarMenuItem = ({ onClick, setting }) => {
                 }}
                 to={`/${setting.toLowerCase()}`}
             >
-                {setting}
+                {translateTab(setting)}
             </Link>
         </MenuItem>
     );

@@ -3,8 +3,7 @@ import {
     Collapse,
     Container,
     FormControlLabel,
-    Link,
-    Typography
+    Link
 } from "@mui/material";
 import React, { useState } from "react";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
@@ -31,20 +30,18 @@ const Footer = () => {
             <FormControlLabel
                 control={!checked ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
                 onClick={handleChange}
-                label="About this app"
+                label="О приложении"
             />
             <Collapse in={checked}>
                 <Box>
-                    <Typography sx={{ display: "flex", alignItems: "center" }}>
-                        This web app make by{" "}
-                        <Typography
-                            variant="h6"
-                            component="span"
-                            sx={{ ml: ".2rem", textDecoration: "underline" }}
-                        >
-                            CANOIST
-                        </Typography>
-                    </Typography>
+                    <span>Сервис разработан: </span>
+                    <Link
+                        href="https://github.com/Canoist"
+                        title="Canoist"
+                        color="inherit"
+                    >
+                        CANOIST
+                    </Link>
                 </Box>
                 <Box>
                     <span>Авторы иконок: </span>
@@ -80,7 +77,7 @@ const Footer = () => {
                     >
                         Pomicon
                     </Link>
-                    <span> from </span>
+                    <span> из </span>
                     <Link
                         href="https://www.flaticon.com/ru/"
                         color="inherit"

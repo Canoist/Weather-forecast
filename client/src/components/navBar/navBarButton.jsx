@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import { translateTab } from "../../utils/translateTabs";
 
 const NavBarButton = ({ page, onClickCloseMenu, otherStyles }) => {
     return (
@@ -29,7 +30,7 @@ const NavBarButton = ({ page, onClickCloseMenu, otherStyles }) => {
                         padding: "1rem 0"
                     }}
                 >
-                    {page}
+                    {translateTab(page)}
                 </div>
             </Link>
         </Button>
