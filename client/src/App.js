@@ -21,7 +21,7 @@ function App() {
                     <Switch>
                         <Route path="/login/:type?" component={Login} />
                         <ProtectedRoute
-                            path="/favorites"
+                            path="/favorites/:favId?"
                             component={Favorites}
                         />
                         <ProtectedRoute
