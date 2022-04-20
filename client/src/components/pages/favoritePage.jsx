@@ -21,7 +21,8 @@ const FavoritePage = () => {
                         key={item.name}
                         style={{
                             width: "360px",
-                            display: "inline-block"
+                            display: "inline-block",
+                            margin: "0 14px"
                         }}
                     >
                         <FavCardWeather favData={item} />
