@@ -39,51 +39,9 @@ const Footer = () => {
                         href="https://github.com/Canoist"
                         title="Canoist"
                         color="inherit"
-                    >
-                        CANOIST
-                    </Link>
-                </Box>
-                <Box>
-                    <span>Авторы иконок: </span>
-                    <Link
-                        href="https://www.flaticon.com/ru/authors/iconixar"
-                        title="iconixar"
-                        color="inherit"
-                    >
-                        iconixar
-                    </Link>
-                    <span>, </span>
-                    <Link
-                        href="https://www.flaticon.com/ru/authors/tulpahn"
-                        color="inherit"
-                        title="tulpahn"
-                    >
-                        tulpahn
-                    </Link>
-                    <span>, </span>
-                    <Link
-                        href="https://www.freepik.com"
-                        color="inherit"
-                        title="Freepik"
-                    >
-                        Freepik
-                    </Link>
-                    <span>, </span>
-                    <Link
-                        href="https://www.flaticon.com/ru/authors/pomicon"
-                        color="inherit"
-                        title="Pomicon"
                         target="blank"
                     >
-                        Pomicon
-                    </Link>
-                    <span> из </span>
-                    <Link
-                        href="https://www.flaticon.com/ru/"
-                        color="inherit"
-                        title="Flaticon"
-                    >
-                        www.flaticon.com
+                        CANOIST
                     </Link>
                 </Box>
             </Collapse>
