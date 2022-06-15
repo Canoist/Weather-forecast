@@ -8,7 +8,8 @@ export function translateTab(name) {
             return "Профиль";
         case "Logout":
             return "Выйти";
-
+        case "Login":
+            return "Войти";
         default:
             break;
     }

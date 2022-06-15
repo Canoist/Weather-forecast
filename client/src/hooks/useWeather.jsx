@@ -35,6 +35,7 @@ const WeatherProvider = ({ children }) => {
         setIsLoadWeather(true);
         try {
             const weather = await getWeatherService.get(data);
+            console.log(weather);
             return weather;
         } catch (error) {
             console.log(error.message);

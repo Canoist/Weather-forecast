@@ -18,7 +18,7 @@ const FavWeatherCardWithControl = ({ onClick, checked, favData, id }) => {
                     width: "345px"
                 }}
                 control={!checked ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
-                onClick={() => onClick(id)}
+                onClick={onClick}
                 label="Показать/скрыть погоду на 3 дня"
             />
         </Box>

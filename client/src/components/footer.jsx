@@ -18,7 +18,7 @@ const Footer = () => {
 
     return (
         <Container
-            maxWidth="100vw"
+            maxWidth={false}
             sx={{
                 position: "fixed",
                 bottom: "0",

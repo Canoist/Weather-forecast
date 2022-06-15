@@ -9,7 +9,7 @@ import WindowLoader from "../windowLoader";
 const CityPage = ({ favId }) => {
     const { favData } = useFavWeather();
     const [checked, setChecked] = useState(false);
-    console.log(favData);
+
     const handleChangeCheck = () => {
         setChecked((prev) => !prev);
     };
